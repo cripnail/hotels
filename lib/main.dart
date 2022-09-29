@@ -49,8 +49,8 @@ class _MyHomePageState extends State<MyHomePage> {
   List<HotelPreview> hotels;
   String errorMessage;
   Dio _dio = Dio();
-  bool isGridViewOn = false;
-  bool isListViewOn = true;
+  bool isGridViewOn = true;
+  bool isListViewOn = false;
   final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
 
   @override
