@@ -23,8 +23,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (BuildContext context) => MyHomePage(),
         '/about': (BuildContext context) => ImageSlideHome(
-          item: 'assets/images/item',
-        ),
+              item: 'assets/images/item',
+            ),
       },
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -51,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Dio _dio = Dio();
   bool isGridViewOn = true;
   bool isListViewOn = false;
-  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
@@ -139,7 +139,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         borderRadius: BorderRadius.circular(15.0),
                       ),
                       margin:
-                      EdgeInsets.symmetric(vertical: 4.0, horizontal: 8.0),
+                          EdgeInsets.symmetric(vertical: 4.0, horizontal: 8.0),
                       color: Colors.white,
                       elevation: 10,
                       semanticContainer: true,
